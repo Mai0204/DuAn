@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F1776E"
+        android:gravity="center"
+        android:padding="10sp"
+        android:text="Thông tin khách thuê"
+        android:textColor="#F3EBEB"
+        android:textSize="27sp"/>
+
+    <TextView
+        android:id="@+id/tv_SoPhong_ThemKhachThue_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"/>
+
+
+    <EditText
+        android:id="@+id/edTenK_update"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:hint="Tên khách thuê"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_white_conor_10_border_gary"
+        android:paddingLeft="20dp"/>
+    <EditText
+        android:id="@+id/edSde_update"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:hint="Số điện thoại"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_white_conor_10_border_gary"
+        android:paddingLeft="20dp"/>
+    <EditText
+        android:id="@+id/edCcce_update"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:hint="Số căn cước"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_white_conor_10_border_gary"
+        android:paddingLeft="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+        <Button
+            android:layout_marginRight="10dp"
+            android:id="@+id/btnSave_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#F1776E"
+            android:text="Sửa"
+            android:textColor="#F8F3F3"
+            app:cornerRadius="20sp"/>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btnCancee_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#F1776E"
+            android:text="Hủy"
+            android:textColor="#F8F4F4"
+            app:cornerRadius="20sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

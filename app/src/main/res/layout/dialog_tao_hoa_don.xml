@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow"
+            android:gravity="center"
+            android:padding="15sp"
+            android:text="Tạo hóa đơn"
+            android:textColor="@android:color/black"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:id="@+id/tvsophong_hd"
+            android:paddingLeft="15sp"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:text="Phòng:" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textColor="@color/black"
+                android:text="Tên Hóa Đơn" />
+
+            <EditText
+                android:id="@+id/ed_tenHoaDon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hóa đơn tháng 11 phòng 101"
+                android:textColor="@color/black"
+                android:padding="20sp" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:text="ngày tạo" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/image_NgayTao_HDon"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/calendar_24"
+                        />
+
+                    <EditText
+                        android:id="@+id/ed_NgayTao_HDon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="dd/mm/yyyy"
+                        android:textColor="@color/black"
+                        android:padding="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:text="nhập số điện" />
+
+                <EditText
+                    android:id="@+id/ed_NhapSoDien_HDon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="123"
+                    android:textColor="@color/black"
+                    android:padding="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:text="nhập số nước" />
+
+                <EditText
+                    android:id="@+id/ed_NhapSoNuoc_HDon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="123"
+                    android:textColor="@color/black"
+                    android:padding="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:text="chi phí khác" />
+
+                <EditText
+                    android:id="@+id/ed_ChiPhiKhac_HDon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="500"
+                    android:textColor="@color/black"
+                    android:padding="20sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16sp">
+
+                <TextView
+                    android:id="@+id/tvtongtien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tổng tiền :"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tinhtongtien"
+                    android:layout_alignParentRight="true"
+                    android:text="tổng tiền" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:text="ghi chú" />
+
+                <EditText
+                    android:id="@+id/ed_GhiChu_HDon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:hint="abc"
+                    android:padding="20sp" />
+            </LinearLayout>
+            <CheckBox
+                android:text="Đã thanh toán"
+                android:id="@+id/checkboxTrangthai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16sp">
+
+                <Button
+                    android:id="@+id/btn_them_HDon"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:layout_weight="1"
+                    app:cornerRadius="20sp"
+                    android:text="Thêm" />
+
+                <Button
+                    android:id="@+id/btn_huy_HDon"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:layout_weight="1"
+                    android:text="Hủy"
+                    app:cornerRadius="20sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

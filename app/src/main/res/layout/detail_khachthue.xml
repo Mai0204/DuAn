@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="#FF6565"
+        android:gravity="center"
+        android:text="Thông tin khách thuê"
+        android:textColor="#FFFFFF"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/thongtinname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/bg_white_conor_10_border_gary"
+        android:paddingLeft="30dp"
+        android:text="Họ và Tên:"
+        android:textSize="26sp" />
+
+    <TextView
+        android:paddingLeft="30dp"
+        android:textSize="26sp"
+        android:layout_marginTop="20sp"
+        android:id="@+id/thongtinsdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SĐT:"
+        android:background="@drawable/bg_white_conor_10_border_gary" />
+
+    <TextView
+        android:id="@+id/thongtincccd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/bg_white_conor_10_border_gary"
+        android:paddingLeft="30dp"
+        android:text="CCCD:"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/thongtinophong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/bg_white_conor_10_border_gary"
+        android:paddingLeft="30dp"
+        android:text="Ở Phòng:"
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/btn_dissmiss_khachthue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#F65E5E"
+        android:text="Back"
+        android:textSize="20sp" />
+</LinearLayout>
